@@ -1,7 +1,15 @@
 header {
     position: relative;
-    background-image: url(../img/ginger.jpg);
     text-align: center;
+    background-color: hotpink;
+}
+
+.main-menu {
+    float: right;
+}
+
+.main-menu li {
+    display: inline-block;
 }
 
 h1 {
@@ -20,14 +28,26 @@ header p {
     color: lime;
     font-size: 2em;
     text-align: center;
-    background:rgba(248, 50, 215, 0.575);
-    margin: 0 .5em 1em;
+    
 }
 
+.menu-bar p{
+    float: left;
+    margin: .2em 0em 0em 2em;
+}
+
+.menu-bar {
+    
+    width: 100%;
+}   
+
+.background-img {
+    background-image: url(../img/ginger.jpg);
+}
 .earth {
     position: absolute;
     width: 50px;
-    top: 10px;
+    top: 30px;
     left: 0;
     border-radius: 50%
 }
@@ -37,4 +57,10 @@ figcaption {
     top: 38px;
     left: 8px;
     font-size: .7em;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
 }
